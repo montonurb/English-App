@@ -39,7 +39,7 @@ class _HomePageState extends State<HomePage>
           tabs: <Widget>[
             Tab(text: "Bichos"),
             Tab(text: "Números"),
-            Tab(text: "Informações")
+            Tab(text: "Informações"),
           ],
         ),
       ),
