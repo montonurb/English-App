@@ -28,11 +28,13 @@ class _HomePageState extends State<HomePage>
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.purple,
         title: Text(
           "Aprenda inglês",
         ),
         bottom: TabBar(
+          indicatorWeight: 4,
+          //indicatorColor: Colors.white,
+          labelStyle: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
           controller: _tabController,
           tabs: <Widget>[
             Tab(text: "Bichos"),
