@@ -1,6 +1,6 @@
 import 'package:english_app/pages/screens/bichos.dart';
 import 'package:english_app/pages/screens/numeros.dart';
-import 'package:english_app/pages/screens/vogais.dart';
+import 'package:english_app/pages/screens/informacoes.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {
@@ -34,12 +34,12 @@ class _HomePageState extends State<HomePage>
         bottom: TabBar(
           indicatorWeight: 4,
           //indicatorColor: Colors.white,
-          labelStyle: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+          labelStyle: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
           controller: _tabController,
           tabs: <Widget>[
             Tab(text: "Bichos"),
             Tab(text: "Números"),
-            Tab(text: "Vogais")
+            Tab(text: "Informações")
           ],
         ),
       ),
@@ -48,7 +48,7 @@ class _HomePageState extends State<HomePage>
         children: [
           BichosScreen(),
           NumerosScreen(),
-          VogaisScreen(),
+          InformcacoesApp()
         ],
       ),
     );
